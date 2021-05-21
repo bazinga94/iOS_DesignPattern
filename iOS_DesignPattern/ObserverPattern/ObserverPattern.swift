@@ -8,7 +8,7 @@
 import Foundation
 
 protocol Observer {
-	var id: Int { get }
+//	var id: Int { get }
 	func update(_ notifyValue: Int)
 }
 
@@ -42,3 +42,44 @@ class Subject {
 	}
 }
 
+class Ian: Observer {
+//	var id: Int
+	private var subject: Subject = Subject()
+
+	init(subject: Subject) {
+		self.subject = subject
+		self.subject.attachObserver(observer: self)
+	}
+
+	func update(_ notifyValue: Int) {
+		print("Ian에서 \(notifyValue) 변경")
+	}
+}
+
+class Haley: Observer {
+//	var id: Int
+	private var subject: Subject = Subject()
+
+	init(subject: Subject) {
+		self.subject = subject
+		self.subject.attachObserver(observer: self)
+	}
+
+	func update(_ notifyValue: Int) {
+		print("Haley에서 \(notifyValue) 변경")
+	}
+}
+
+class Novelyn: Observer {
+//	var id: Int
+	private var subject: Subject = Subject()
+
+	init(subject: Subject) {
+		self.subject = subject
+		self.subject.attachObserver(observer: self)
+	}
+
+	func update(_ notifyValue: Int) {
+		print("Novelyn에서 \(notifyValue) 변경")
+	}
+}
