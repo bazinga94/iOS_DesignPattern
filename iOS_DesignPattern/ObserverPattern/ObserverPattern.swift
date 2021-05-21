@@ -8,7 +8,6 @@
 import Foundation
 
 protocol Observer {
-//	var id: Int { get }
 	func update(_ notifyValue: String)
 }
 
@@ -43,12 +42,12 @@ class Subject {
 }
 
 class Ian: Observer {
-//	var id: Int
 	private var subject: Subject = Subject()
 	weak var delegate: IanDelegate?
 
-	init(subject: Subject) {
+	init(subject: Subject, delegate: IanDelegate) {
 		self.subject = subject
+		self.delegate = delegate
 		self.subject.attachObserver(observer: self)
 	}
 
@@ -59,7 +58,6 @@ class Ian: Observer {
 }
 
 class Haley: Observer {
-//	var id: Int
 	private var subject: Subject = Subject()
 
 	init(subject: Subject) {
@@ -73,7 +71,6 @@ class Haley: Observer {
 }
 
 class Novelyn: Observer {
-//	var id: Int
 	private var subject: Subject = Subject()
 
 	init(subject: Subject) {

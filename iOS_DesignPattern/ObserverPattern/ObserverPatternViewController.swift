@@ -18,13 +18,13 @@ class ObserverPatternViewController: UIViewController {
 		super.viewDidLoad()
 
 		let subject = Subject()
-		let _ = Ian(subject: subject)
+		let _ = Ian(subject: subject, delegate: self)
 		let _ = Haley(subject: subject)
 		let _ = Novelyn(subject: subject)
 
-		subject.text = "Ian~"
-		subject.text = "Haley~"
-		subject.text = "Novelyn~"
+		subject.text = "Hello Ian~"
+//		subject.text = "Hello Haley~"
+//		subject.text = "Hello Novelyn~"
 	}
 }
 
