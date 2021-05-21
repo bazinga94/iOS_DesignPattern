@@ -9,22 +9,22 @@ import Foundation
 
 protocol Observer {
 //	var id: Int { get }
-	func update(_ notifyValue: Int)
+	func update(_ notifyValue: String)
 }
 
 class Subject {
 	private var observerArray: [Observer] = [Observer]()
-	private var _number = Int()
+	private var _text = String()
 
 	/// 값이 변경되면 notify() 호출
-	var number: Int {
+	var text: String {
 		set {
-			_number = newValue
+			_text = newValue
 			notify()
 		}
 
 		get {
-			return _number
+			return _text
 		}
 	}
 
@@ -37,7 +37,7 @@ class Subject {
 	/// Observer 알림
 	func notify() {
 		for observer in observerArray {
-			observer.update(number)
+			observer.update(text)
 		}
 	}
 }
@@ -45,14 +45,16 @@ class Subject {
 class Ian: Observer {
 //	var id: Int
 	private var subject: Subject = Subject()
+	weak var delegate: IanDelegate?
 
 	init(subject: Subject) {
 		self.subject = subject
 		self.subject.attachObserver(observer: self)
 	}
 
-	func update(_ notifyValue: Int) {
+	func update(_ notifyValue: String) {
 		print("Ian에서 \(notifyValue) 변경")
+		delegate?.changeLabel(text: notifyValue)
 	}
 }
 
@@ -65,7 +67,7 @@ class Haley: Observer {
 		self.subject.attachObserver(observer: self)
 	}
 
-	func update(_ notifyValue: Int) {
+	func update(_ notifyValue: String) {
 		print("Haley에서 \(notifyValue) 변경")
 	}
 }
@@ -79,7 +81,7 @@ class Novelyn: Observer {
 		self.subject.attachObserver(observer: self)
 	}
 
-	func update(_ notifyValue: Int) {
+	func update(_ notifyValue: String) {
 		print("Novelyn에서 \(notifyValue) 변경")
 	}
 }

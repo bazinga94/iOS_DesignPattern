@@ -9,6 +9,11 @@ import UIKit
 
 class ObserverPatternViewController: UIViewController {
 
+	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var ianLabel: UILabel!
+	@IBOutlet weak var haleyLabel: UILabel!
+	@IBOutlet weak var novelynLabel: UILabel!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -17,8 +22,18 @@ class ObserverPatternViewController: UIViewController {
 		let _ = Haley(subject: subject)
 		let _ = Novelyn(subject: subject)
 
-		subject.number = 1
-		subject.number = 2
-		subject.number = 3
+		subject.text = "Ian~"
+		subject.text = "Haley~"
+		subject.text = "Novelyn~"
 	}
+}
+
+extension ObserverPatternViewController: IanDelegate {
+	func changeLabel(text: String) {
+		ianLabel.text = text
+	}
+}
+
+protocol IanDelegate: AnyObject {
+	func changeLabel(text: String)
 }

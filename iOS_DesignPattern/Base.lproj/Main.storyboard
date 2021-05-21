@@ -44,9 +44,51 @@
                     <view key="view" contentMode="scaleToFill" id="Opi-oy-8Py">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Observer Pattern!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHc-ZN-yLl">
+                                <rect key="frame" x="139.5" y="84" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJh-e8-wKc">
+                                <rect key="frame" x="195.5" y="155" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kI-1E-Tub">
+                                <rect key="frame" x="185.5" y="226" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Novelyn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRP-Sx-BZN">
+                                <rect key="frame" x="176.5" y="297" width="61.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kFs-mN-jH0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dRP-Sx-BZN" firstAttribute="top" secondItem="3kI-1E-Tub" secondAttribute="bottom" constant="50" id="083-5i-ojt"/>
+                            <constraint firstItem="3kI-1E-Tub" firstAttribute="top" secondItem="eJh-e8-wKc" secondAttribute="bottom" constant="50" id="3cM-3F-ZbO"/>
+                            <constraint firstItem="3kI-1E-Tub" firstAttribute="centerX" secondItem="kFs-mN-jH0" secondAttribute="centerX" id="9Ah-XW-wDk"/>
+                            <constraint firstItem="WHc-ZN-yLl" firstAttribute="top" secondItem="kFs-mN-jH0" secondAttribute="top" constant="40" id="MgZ-Si-ppn"/>
+                            <constraint firstItem="WHc-ZN-yLl" firstAttribute="centerX" secondItem="kFs-mN-jH0" secondAttribute="centerX" id="ZJQ-T8-SJC"/>
+                            <constraint firstItem="dRP-Sx-BZN" firstAttribute="centerX" secondItem="kFs-mN-jH0" secondAttribute="centerX" id="Zzk-o0-GgL"/>
+                            <constraint firstItem="eJh-e8-wKc" firstAttribute="centerX" secondItem="kFs-mN-jH0" secondAttribute="centerX" id="eLt-3Q-rxZ"/>
+                            <constraint firstItem="eJh-e8-wKc" firstAttribute="top" secondItem="WHc-ZN-yLl" secondAttribute="bottom" constant="50" id="nx5-8C-AV4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="haleyLabel" destination="3kI-1E-Tub" id="PNg-rY-1An"/>
+                        <outlet property="ianLabel" destination="eJh-e8-wKc" id="6tP-Vq-Bdg"/>
+                        <outlet property="novelynLabel" destination="dRP-Sx-BZN" id="kBm-ol-aDC"/>
+                        <outlet property="titleLabel" destination="WHc-ZN-yLl" id="HZZ-1m-7iP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJC-ef-hKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
