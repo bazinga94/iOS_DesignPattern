@@ -11,9 +11,15 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+
+		let subject = Subject()
+		let _ = Ian(subject: subject)
+		let _ = Haley(subject: subject)
+		let _ = Novelyn(subject: subject)
+
+		subject.number = 1
+		subject.number = 2
+		subject.number = 3
 	}
-
-
 }
 
