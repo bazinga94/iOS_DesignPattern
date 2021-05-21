@@ -2,7 +2,7 @@
 //  iOS_DesignPatternUITests.swift
 //  iOS_DesignPatternUITests
 //
-//  Created by 60067671 on 2021/05/21.
+//  Created by Jongho Lee on 2021/05/21.
 //
 
 import XCTest

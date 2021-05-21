@@ -15,6 +15,7 @@
 		B278C0462657622200F79CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B278C0442657622200F79CFD /* LaunchScreen.storyboard */; };
 		B278C0512657622300F79CFD /* iOS_DesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C0502657622300F79CFD /* iOS_DesignPatternTests.swift */; };
 		B278C05C2657622300F79CFD /* iOS_DesignPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C05B2657622300F79CFD /* iOS_DesignPatternUITests.swift */; };
+		B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C06D2657653700F79CFD /* ObserverPattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B278C0572657622300F79CFD /* iOS_DesignPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_DesignPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B278C05B2657622300F79CFD /* iOS_DesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DesignPatternUITests.swift; sourceTree = "<group>"; };
 		B278C05D2657622300F79CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B278C06D2657653700F79CFD /* ObserverPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		B278C0382657622100F79CFD /* iOS_DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				B278C06C2657652300F79CFD /* ObserverPattern */,
 				B278C0392657622100F79CFD /* AppDelegate.swift */,
 				B278C03B2657622100F79CFD /* SceneDelegate.swift */,
 				B278C03D2657622100F79CFD /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				B278C05D2657622300F79CFD /* Info.plist */,
 			);
 			path = iOS_DesignPatternUITests;
+			sourceTree = "<group>";
+		};
+		B278C06C2657652300F79CFD /* ObserverPattern */ = {
+			isa = PBXGroup;
+			children = (
+				B278C06D2657653700F79CFD /* ObserverPattern.swift */,
+			);
+			path = ObserverPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				B278C03E2657622100F79CFD /* ViewController.swift in Sources */,
 				B278C03A2657622100F79CFD /* AppDelegate.swift in Sources */,
+				B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */,
 				B278C03C2657622100F79CFD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
