@@ -16,6 +16,7 @@
 		B278C0512657622300F79CFD /* iOS_DesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C0502657622300F79CFD /* iOS_DesignPatternTests.swift */; };
 		B278C05C2657622300F79CFD /* iOS_DesignPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C05B2657622300F79CFD /* iOS_DesignPatternUITests.swift */; };
 		B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C06D2657653700F79CFD /* ObserverPattern.swift */; };
+		B278C07626576D7100F79CFD /* ObserverPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C07526576D7100F79CFD /* ObserverPatternViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B278C05B2657622300F79CFD /* iOS_DesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DesignPatternUITests.swift; sourceTree = "<group>"; };
 		B278C05D2657622300F79CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B278C06D2657653700F79CFD /* ObserverPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPattern.swift; sourceTree = "<group>"; };
+		B278C07526576D7100F79CFD /* ObserverPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPatternViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B278C06D2657653700F79CFD /* ObserverPattern.swift */,
+				B278C07526576D7100F79CFD /* ObserverPatternViewController.swift */,
 			);
 			path = ObserverPattern;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B278C03E2657622100F79CFD /* ViewController.swift in Sources */,
+				B278C07626576D7100F79CFD /* ObserverPatternViewController.swift in Sources */,
 				B278C03A2657622100F79CFD /* AppDelegate.swift in Sources */,
 				B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */,
 				B278C03C2657622100F79CFD /* SceneDelegate.swift in Sources */,

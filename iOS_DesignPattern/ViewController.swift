@@ -11,15 +11,11 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+	}
 
-		let subject = Subject()
-		let _ = Ian(subject: subject)
-		let _ = Haley(subject: subject)
-		let _ = Novelyn(subject: subject)
-
-		subject.number = 1
-		subject.number = 2
-		subject.number = 3
+	@IBAction func goObserverPattern(_ sender: Any) {
+		let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "ObserverPatternViewController")
+		self.navigationController?.pushViewController(viewController, animated: true)
 	}
 }
 
