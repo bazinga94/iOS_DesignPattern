@@ -13,7 +13,19 @@ class SampleViewController: UIViewController {
 	@IBOutlet weak var haleyLabel: UILabel!
 	@IBOutlet weak var novelynLabel: UILabel!
 
+	private var viewModel: SampleViewModel!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		viewModel = SampleViewModel.init(model: SampleModel.init(text: "Hello"))
+		viewModel.sampleModel.bind { [weak self] memoModel in
+			self?.ianLabel.text = memoModel.text
+		}
+
+		configureText()
+	}
+
+	func configureText() {
+		viewModel.changeText(with: "Hello Ian~")
 	}
 }

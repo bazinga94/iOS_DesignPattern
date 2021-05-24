@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct SampleModel {
+	var text: String
+}

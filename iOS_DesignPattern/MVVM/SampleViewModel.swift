@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+protocol SampleViewModelProtocol {
+	func changeText(with text: String)
+}
+
+class SampleViewModel: SampleViewModelProtocol {
+	var sampleModel: Dynamic<SampleModel> = .init(.init(text: ""))
+
+	init(model: SampleModel) {
+		sampleModel.value = model
+	}
+
+	func changeText(with text: String) {
+		sampleModel.value.text = text
+	}
+}
