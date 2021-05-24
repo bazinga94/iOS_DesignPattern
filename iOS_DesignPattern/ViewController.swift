@@ -17,5 +17,10 @@ class ViewController: UIViewController {
 		let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "ObserverPatternViewController")
 		self.navigationController?.pushViewController(viewController, animated: true)
 	}
+
+	@IBAction func goMVVM(_ sender: Any) {
+		let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "SampleViewController")
+		self.navigationController?.pushViewController(viewController, animated: true)
+	}
 }
 

@@ -23,12 +23,21 @@
                                     <action selector="goObserverPattern:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IPS-xw-MQ1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-hv-07L">
+                                <rect key="frame" x="184" y="198" width="46" height="30"/>
+                                <state key="normal" title="MVVM"/>
+                                <connections>
+                                    <action selector="goMVVM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="07R-1o-ivZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PwU-wF-37J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="6pG-x7-Dqb"/>
                             <constraint firstItem="PwU-wF-37J" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dxe-jr-1G3"/>
+                            <constraint firstItem="Nax-hv-07L" firstAttribute="top" secondItem="PwU-wF-37J" secondAttribute="bottom" constant="50" id="i3C-ni-Eib"/>
+                            <constraint firstItem="Nax-hv-07L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qFq-3t-Xfj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tm5-Tl-EKl"/>
@@ -93,6 +102,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJC-ef-hKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1776.8115942028987" y="124.55357142857142"/>
+        </scene>
+        <!--Sample View Controller-->
+        <scene sceneID="fYz-bN-rCQ">
+            <objects>
+                <viewController storyboardIdentifier="SampleViewController" id="b8i-h6-nR2" customClass="SampleViewController" customModule="iOS_DesignPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jVv-Fk-jx5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oGZ-sY-7ew"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1d-Ol-lW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2548" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EjV-Hc-Tab">
