@@ -39,6 +39,10 @@ class Subject {
 			observer.update(text)
 		}
 	}
+
+	func changeText(with text: String) {
+		self.text = text
+	}
 }
 
 class Ian: Observer {

@@ -14,14 +14,19 @@ class ObserverPatternViewController: UIViewController {
 	@IBOutlet weak var haleyLabel: UILabel!
 	@IBOutlet weak var novelynLabel: UILabel!
 
+	private var subject: Subject = Subject.init()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		let subject = Subject()
 		let _ = Ian(subject: subject, delegate: self)
 		let _ = Haley(subject: subject)
 		let _ = Novelyn(subject: subject)
 
+		configureText()
+	}
+
+	func configureText() {
 		subject.text = "Hello Ian~"
 //		subject.text = "Hello Haley~"
 //		subject.text = "Hello Novelyn~"
