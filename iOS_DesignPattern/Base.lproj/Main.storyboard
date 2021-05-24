@@ -110,9 +110,50 @@
                     <view key="view" contentMode="scaleToFill" id="jVv-Fk-jx5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVVM!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZC-xg-o1g">
+                                <rect key="frame" x="179" y="84" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPu-m8-0TW">
+                                <rect key="frame" x="195.5" y="155" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2o-5U-Idd">
+                                <rect key="frame" x="185.5" y="226" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Novelyn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42j-X1-Dpz">
+                                <rect key="frame" x="176.5" y="297" width="61.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oGZ-sY-7ew"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="42j-X1-Dpz" firstAttribute="centerX" secondItem="oGZ-sY-7ew" secondAttribute="centerX" id="2Ba-xf-Lqj"/>
+                            <constraint firstItem="42j-X1-Dpz" firstAttribute="top" secondItem="a2o-5U-Idd" secondAttribute="bottom" constant="50" id="B00-iZ-se7"/>
+                            <constraint firstItem="BPu-m8-0TW" firstAttribute="top" secondItem="sZC-xg-o1g" secondAttribute="bottom" constant="50" id="S6t-Md-kPL"/>
+                            <constraint firstItem="sZC-xg-o1g" firstAttribute="centerX" secondItem="oGZ-sY-7ew" secondAttribute="centerX" id="Tgh-yl-HNt"/>
+                            <constraint firstItem="BPu-m8-0TW" firstAttribute="centerX" secondItem="oGZ-sY-7ew" secondAttribute="centerX" id="aso-96-xQS"/>
+                            <constraint firstItem="a2o-5U-Idd" firstAttribute="top" secondItem="BPu-m8-0TW" secondAttribute="bottom" constant="50" id="bQ5-nn-DXf"/>
+                            <constraint firstItem="sZC-xg-o1g" firstAttribute="top" secondItem="oGZ-sY-7ew" secondAttribute="top" constant="40" id="xe2-Fc-awT"/>
+                            <constraint firstItem="a2o-5U-Idd" firstAttribute="centerX" secondItem="oGZ-sY-7ew" secondAttribute="centerX" id="zFC-J1-FJ6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="haleyLabel" destination="a2o-5U-Idd" id="2VL-fL-ujK"/>
+                        <outlet property="ianLabel" destination="BPu-m8-0TW" id="y1W-GU-PLx"/>
+                        <outlet property="novelynLabel" destination="42j-X1-Dpz" id="3Yo-ar-kkJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1d-Ol-lW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

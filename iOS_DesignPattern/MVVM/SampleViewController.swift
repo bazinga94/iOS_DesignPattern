@@ -9,6 +9,10 @@ import UIKit
 
 class SampleViewController: UIViewController {
 
+	@IBOutlet weak var ianLabel: UILabel!
+	@IBOutlet weak var haleyLabel: UILabel!
+	@IBOutlet weak var novelynLabel: UILabel!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}

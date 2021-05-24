@@ -20,6 +20,7 @@
 		B29C6A34265B6C4B00BF666D /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C6A33265B6C4B00BF666D /* SampleViewController.swift */; };
 		B29C6A39265B6C7800BF666D /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C6A38265B6C7800BF666D /* SampleViewModel.swift */; };
 		B29C6A3E265B6C8800BF666D /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C6A3D265B6C8800BF666D /* SampleModel.swift */; };
+		B29C6A4C265B8E0000BF666D /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C6A4B265B8E0000BF666D /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B29C6A33265B6C4B00BF666D /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		B29C6A38265B6C7800BF666D /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
 		B29C6A3D265B6C8800BF666D /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		B29C6A4B265B8E0000BF666D /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				B29C6A33265B6C4B00BF666D /* SampleViewController.swift */,
 				B29C6A38265B6C7800BF666D /* SampleViewModel.swift */,
 				B29C6A3D265B6C8800BF666D /* SampleModel.swift */,
+				B29C6A4B265B8E0000BF666D /* Dynamic.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				B278C03E2657622100F79CFD /* ViewController.swift in Sources */,
 				B278C07626576D7100F79CFD /* ObserverPatternViewController.swift in Sources */,
 				B29C6A34265B6C4B00BF666D /* SampleViewController.swift in Sources */,
+				B29C6A4C265B8E0000BF666D /* Dynamic.swift in Sources */,
 				B29C6A39265B6C7800BF666D /* SampleViewModel.swift in Sources */,
 				B278C03A2657622100F79CFD /* AppDelegate.swift in Sources */,
 				B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */,
