@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A21424265FDDDB001160AB /* FactoryMethodPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A21423265FDDDB001160AB /* FactoryMethodPattern.swift */; };
+		43A21429265FDFFD001160AB /* AbstractFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A21428265FDFFD001160AB /* AbstractFactoryPattern.swift */; };
 		B278C03A2657622100F79CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C0392657622100F79CFD /* AppDelegate.swift */; };
 		B278C03C2657622100F79CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C03B2657622100F79CFD /* SceneDelegate.swift */; };
 		B278C03E2657622100F79CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C03D2657622100F79CFD /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43A21423265FDDDB001160AB /* FactoryMethodPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodPattern.swift; sourceTree = "<group>"; };
+		43A21428265FDFFD001160AB /* AbstractFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryPattern.swift; sourceTree = "<group>"; };
 		B278C0362657622100F79CFD /* iOS_DesignPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_DesignPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B278C0392657622100F79CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B278C03B2657622100F79CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43A21422265FD8E3001160AB /* FactoryPattern */ = {
+			isa = PBXGroup;
+			children = (
+				43A21423265FDDDB001160AB /* FactoryMethodPattern.swift */,
+				43A21428265FDFFD001160AB /* AbstractFactoryPattern.swift */,
+			);
+			path = FactoryPattern;
+			sourceTree = "<group>";
+		};
 		B278C02D2657622000F79CFD = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 		B278C0382657622100F79CFD /* iOS_DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				43A21422265FD8E3001160AB /* FactoryPattern */,
 				B29C6A2A265B6BF000BF666D /* MVVM */,
 				B278C06C2657652300F79CFD /* ObserverPattern */,
 				B278C0392657622100F79CFD /* AppDelegate.swift */,
@@ -293,11 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B278C03E2657622100F79CFD /* ViewController.swift in Sources */,
+				43A21429265FDFFD001160AB /* AbstractFactoryPattern.swift in Sources */,
 				B278C07626576D7100F79CFD /* ObserverPatternViewController.swift in Sources */,
 				B29C6A34265B6C4B00BF666D /* SampleViewController.swift in Sources */,
 				B29C6A4C265B8E0000BF666D /* Dynamic.swift in Sources */,
 				B29C6A39265B6C7800BF666D /* SampleViewModel.swift in Sources */,
 				B278C03A2657622100F79CFD /* AppDelegate.swift in Sources */,
+				43A21424265FDDDB001160AB /* FactoryMethodPattern.swift in Sources */,
 				B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */,
 				B278C03C2657622100F79CFD /* SceneDelegate.swift in Sources */,
 				B29C6A3E265B6C8800BF666D /* SampleModel.swift in Sources */,
