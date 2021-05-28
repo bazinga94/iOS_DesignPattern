@@ -63,3 +63,58 @@ class ChicagoPizzaStore: PizzaStoreProtocol {
 	func orderPizza() { }
 	func deliveryPizza() { }
 }
+
+protocol Button {
+	func setTitle(_ title: String) -> Void
+	func show() -> Void
+}
+
+protocol Label {
+	func setTitle(_ title: String) -> Void
+	func show() -> Void
+}
+
+protocol AbstractGUIFactory {
+	func createButton() -> Button
+	func createLabel() -> Label
+	func createView() -> View
+}
+
+class GUIBuilder {
+	private var platform: String
+	private var guiFactory: AbstractGUIFactory?
+
+	init(platform: String) {
+		self.platform = platform
+	}
+
+	func initGuiFactory() -> Void {
+		if guiFactory != nil { return }
+		switch platform {
+			case "apple":
+				guiFactory = AppleFactory()
+			case "google":
+				guiFactory = GoogleFactory()
+			default:
+				guiFactory = nil
+		}
+	}
+
+	func buildButton() -> Button {
+		initGuiFactory()
+		if let button = guiFactory.createButton() {
+			return button
+		} else {
+			return Button()
+		}
+	}
+
+	func buildLabel() -> Label {
+		initGuiFactory()
+		if let label = guiFactory.createLabel() {
+			return Label
+		} else {
+			return Label()
+		}
+	}
+}
