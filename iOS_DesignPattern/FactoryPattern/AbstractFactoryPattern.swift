@@ -77,7 +77,27 @@ protocol Label {
 protocol AbstractGUIFactory {
 	func createButton() -> Button
 	func createLabel() -> Label
-	func createView() -> View
+}
+
+
+class AppleFactory : AbstractGUIFactory {
+	func createButton() -> Button {
+		return AppleButton()
+	}
+
+	func createLabel() -> Label {
+		return AppleLabel()
+	}
+}
+
+class GoogleFactory : AbstractGUIFactory {
+	func createButton() -> Button {
+		return GoogleButton()
+	}
+
+	func createLabel() -> Label {
+		return GoogleLabel()
+	}
 }
 
 class GUIBuilder {
@@ -102,7 +122,7 @@ class GUIBuilder {
 
 	func buildButton() -> Button {
 		initGuiFactory()
-		if let button = guiFactory.createButton() {
+		if let button = guiFactory?.createButton() {
 			return button
 		} else {
 			return Button()
@@ -111,10 +131,20 @@ class GUIBuilder {
 
 	func buildLabel() -> Label {
 		initGuiFactory()
-		if let label = guiFactory.createLabel() {
-			return Label
+		if let label = guiFactory?.createLabel() {
+			return label
 		} else {
 			return Label()
 		}
 	}
 }
+
+let guiBuilder: GUIBuilder = GUIBuilder(platform: "Apple")
+
+let Label: Label = guiBuilder.buildLabel()
+label.setTitle("label title")
+label.show()
+
+let button: Button = guiBuilder.buildButton()
+button.setTitle("button title")
+button.show()
