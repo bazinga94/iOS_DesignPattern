@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4387B35C2667BBBC00438B73 /* FactoryPatternCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4387B35B2667BBBC00438B73 /* FactoryPatternCellController.swift */; };
 		43A21424265FDDDB001160AB /* FactoryMethodPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A21423265FDDDB001160AB /* FactoryMethodPattern.swift */; };
 		43A21429265FDFFD001160AB /* AbstractFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A21428265FDFFD001160AB /* AbstractFactoryPattern.swift */; };
 		B278C03A2657622100F79CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278C0392657622100F79CFD /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4387B35B2667BBBC00438B73 /* FactoryPatternCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPatternCellController.swift; sourceTree = "<group>"; };
 		43A21423265FDDDB001160AB /* FactoryMethodPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodPattern.swift; sourceTree = "<group>"; };
 		43A21428265FDFFD001160AB /* AbstractFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryPattern.swift; sourceTree = "<group>"; };
 		B278C0362657622100F79CFD /* iOS_DesignPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_DesignPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			children = (
 				43A21423265FDDDB001160AB /* FactoryMethodPattern.swift */,
 				43A21428265FDFFD001160AB /* AbstractFactoryPattern.swift */,
+				4387B35B2667BBBC00438B73 /* FactoryPatternCellController.swift */,
 			);
 			path = FactoryPattern;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				B29C6A4C265B8E0000BF666D /* Dynamic.swift in Sources */,
 				B29C6A39265B6C7800BF666D /* SampleViewModel.swift in Sources */,
 				B278C03A2657622100F79CFD /* AppDelegate.swift in Sources */,
+				4387B35C2667BBBC00438B73 /* FactoryPatternCellController.swift in Sources */,
 				43A21424265FDDDB001160AB /* FactoryMethodPattern.swift in Sources */,
 				B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */,
 				B278C03C2657622100F79CFD /* SceneDelegate.swift in Sources */,
