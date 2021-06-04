@@ -22,6 +22,7 @@ class CollectionViewCellControllerFactory {
 	}
 
 	func cellController(with item: ItemModelProtocol) -> [CollectionViewCellController] {
+		return []
 	}
 }
 

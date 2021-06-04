@@ -58,9 +58,10 @@ func orderPizza(_ type: String) -> Pizza {
 	pizza.box()
 	return pizza
 }
-// 메뉴가 변경되거나 추가되면 함수 수정이 많이 필요함
+// -> 메뉴가 변경되거나 추가되면 함수 수정이 많이 필요함
 
 // MARK: - TO-BE
+
 class SimplePizzaFactory {
 	func createPizza(_ type: String) -> Pizza? {
 		var pizza: Pizza?

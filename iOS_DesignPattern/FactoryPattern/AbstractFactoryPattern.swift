@@ -5,7 +5,7 @@
 //  Created by Jongho Lee on 2021/05/27.
 //
 
-import Foundation
+import UIKit
 
 // 출처: https://gaki2745.github.io/ios/2020/04/12/iOS-DesignPattern-05/
 
@@ -64,38 +64,77 @@ class ChicagoPizzaStore: PizzaStoreProtocol {
 	func deliveryPizza() { }
 }
 
-protocol Button {
+protocol ButtonProtocol {
 	func setTitle(_ title: String) -> Void
 	func show() -> Void
 }
 
-protocol Label {
+protocol LabelProtocol {
 	func setTitle(_ title: String) -> Void
 	func show() -> Void
 }
 
 protocol AbstractGUIFactory {
-	func createButton() -> Button
-	func createLabel() -> Label
+	func createButton() -> ButtonProtocol
+	func createLabel() -> LabelProtocol
 }
 
+class AppleButton: ButtonProtocol {
+	func setTitle(_ title: String) {
+		print("Apple Button set title \(title)")
+	}
+
+	func show() {
+		print("Apple Button show")
+	}
+}
+
+class GoogleButton: ButtonProtocol {
+	func setTitle(_ title: String) {
+		print("Google Button set title \(title)")
+	}
+
+	func show() {
+		print("Google Button show")
+	}
+}
+
+class AppleLabel: LabelProtocol {
+	func setTitle(_ title: String) {
+		print("Apple Label set title \(title)")
+	}
+
+	func show() {
+		print("Apple Label show")
+	}
+}
+
+class GoogleLabel: LabelProtocol {
+	func setTitle(_ title: String) {
+		print("Google Label set title \(title)")
+	}
+
+	func show() {
+		print("Google Label show")
+	}
+}
 
 class AppleFactory : AbstractGUIFactory {
-	func createButton() -> Button {
+	func createButton() -> ButtonProtocol {
 		return AppleButton()
 	}
 
-	func createLabel() -> Label {
+	func createLabel() -> LabelProtocol {
 		return AppleLabel()
 	}
 }
 
 class GoogleFactory : AbstractGUIFactory {
-	func createButton() -> Button {
+	func createButton() -> ButtonProtocol {
 		return GoogleButton()
 	}
 
-	func createLabel() -> Label {
+	func createLabel() -> LabelProtocol {
 		return GoogleLabel()
 	}
 }
@@ -120,31 +159,22 @@ class GUIBuilder {
 		}
 	}
 
-	func buildButton() -> Button {
+	func buildButton() -> ButtonProtocol? {
 		initGuiFactory()
 		if let button = guiFactory?.createButton() {
 			return button
 		} else {
-			return Button()
+			return nil
 		}
 	}
 
-	func buildLabel() -> Label {
+	func buildLabel() -> LabelProtocol? {
 		initGuiFactory()
 		if let label = guiFactory?.createLabel() {
 			return label
 		} else {
-			return Label()
+			return nil
 		}
 	}
 }
 
-let guiBuilder: GUIBuilder = GUIBuilder(platform: "Apple")
-
-let Label: Label = guiBuilder.buildLabel()
-label.setTitle("label title")
-label.show()
-
-let button: Button = guiBuilder.buildButton()
-button.setTitle("button title")
-button.show()
