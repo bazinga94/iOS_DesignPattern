@@ -62,7 +62,6 @@ func orderPizza(_ type: String) -> Pizza {
 	pizza.box()
 	return pizza
 }
-// -> 메뉴가 변경되거나 추가되면 함수 수정이 많이 필요함
 
 // MARK: - TO-BE
 
@@ -104,3 +103,7 @@ class SimplePizzaFactory {
 		return pizza
 	}
 }
+// 객체 생성 처리를 서브 클래스로 분리하여 처리함,
+
+// -> 메뉴가 변경되거나 추가되면 함수 수정이 많이 필요함
+// cut 단계가 없어지거나~? 하면 어쩌지 -> 추상 팩토리 패턴
