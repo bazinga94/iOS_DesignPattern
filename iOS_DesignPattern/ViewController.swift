@@ -26,10 +26,28 @@ class ViewController: UIViewController {
 
 	@IBAction func executeFactoryPatternExample(_ sender: Any) {
 
-		// 팩토리 메소드 패턴
-		
+		// 기존 인스턴스 생성
+		let pizza1 = orderPizza("Cheese")
+		print()
+		print("-----------")
+		print()
 
-		// 추상 팩토리 패턴
+		// 팩토리 메소드 패턴
+		let pizzaFactory = SimplePizzaFactory()
+		let pizzaStore = PizzaStore(factory: pizzaFactory)
+		let pizza2 = pizzaStore.orderPizza("Cheese")
+		print()
+		print("-----------")
+		print()
+
+		// 추상 팩토리 패턴 (1)
+		let pizzaStoreBuilder = PizzaStoreBuilder(style: "newyork")
+		let pizza3 = pizzaStoreBuilder.orderPizza(type: "Peperoni")
+		print()
+		print("-----------")
+		print()
+
+		// 추상 팩토리 패턴 (2)
 		let guiBuilder: GUIBuilder = GUIBuilder(platform: "Apple")
 
 		let label: LabelProtocol = guiBuilder.buildLabel()!

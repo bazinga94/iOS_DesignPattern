@@ -13,15 +13,19 @@ import Foundation
 
 class Pizza {
 	func prepare() {
+		print("pizza prepare")
 	}
 
 	func bake() {
+		print("pizza bake")
 	}
 
 	func cut() {
+		print("pizza cut")
 	}
 
 	func box() {
+		print("pizza box")
 	}
 }
 
@@ -41,7 +45,7 @@ func orderPizza(_ type: String) -> Pizza {
 	var pizza = Pizza()
 
 	switch type {
-		case "cheese":
+		case "Cheese":
 			pizza = CheesePizza()
 		case "Peperoni":
 			pizza = PepperoniPizza()
@@ -66,7 +70,7 @@ class SimplePizzaFactory {
 	func createPizza(_ type: String) -> Pizza? {
 		var pizza: Pizza?
 		switch type {
-			case "cheese":
+			case "Cheese":
 				pizza = CheesePizza()
 			case "Peperoni":
 				pizza = PepperoniPizza()

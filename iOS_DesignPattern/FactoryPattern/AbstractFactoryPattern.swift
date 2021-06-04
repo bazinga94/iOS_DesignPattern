@@ -28,13 +28,22 @@ class ChicagoPepperoniPizza: Pizza {
 }
 
 class NewyorkPizzaStore: PizzaStoreProtocol {
+
 	func createPizza(_ type: String) -> Pizza? {
 		var pizza: Pizza?
 		switch type {
-			case "cheese":
+			case "Cheese":
 				pizza = NewyorkCheesePizza()
+				pizza?.prepare()
+				pizza?.bake()
+				pizza?.cut()
+				pizza?.box()
 			case "Peperoni":
 				pizza = NewyorkPepperoniPizza()
+				pizza?.prepare()
+				pizza?.bake()
+				pizza?.cut()
+				pizza?.box()
 			default:
 				pizza = nil
 		}
@@ -50,10 +59,18 @@ class ChicagoPizzaStore: PizzaStoreProtocol {
 	func createPizza(_ type: String) -> Pizza? {
 		var pizza: Pizza?
 		switch type {
-			case "cheese":
+			case "Cheese":
 				pizza = ChicagoCheesePizza()
+				pizza?.prepare()
+				pizza?.bake()
+				pizza?.cut()
+				pizza?.box()
 			case "Peperoni":
 				pizza = ChicagoPepperoniPizza()
+				pizza?.prepare()
+				pizza?.bake()
+				pizza?.cut()
+				pizza?.box()
 			default:
 				pizza = nil
 		}
@@ -63,6 +80,35 @@ class ChicagoPizzaStore: PizzaStoreProtocol {
 	func orderPizza() { }
 	func deliveryPizza() { }
 }
+
+class PizzaStoreBuilder {
+	private var style: String
+	private var pizzaStore: PizzaStoreProtocol?
+
+	init(style: String) {
+		self.style = style
+	}
+
+	func initPizzaStore() {
+		if pizzaStore != nil { return }
+
+		switch style {
+			case "newyork":
+				pizzaStore = NewyorkPizzaStore()
+			case "chicago":
+				pizzaStore = ChicagoPizzaStore()
+			default:
+				pizzaStore = nil
+		}
+	}
+
+	func orderPizza(type: String) -> Pizza? {
+		initPizzaStore()
+		return pizzaStore?.createPizza(type)
+	}
+}
+
+// -----------------------------------------
 
 protocol ButtonProtocol {
 	func setTitle(_ title: String) -> Void
