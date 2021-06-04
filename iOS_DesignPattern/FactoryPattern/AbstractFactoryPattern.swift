@@ -150,9 +150,9 @@ class GUIBuilder {
 	func initGuiFactory() -> Void {
 		if guiFactory != nil { return }
 		switch platform {
-			case "apple":
+			case "Apple":
 				guiFactory = AppleFactory()
-			case "google":
+			case "Google":
 				guiFactory = GoogleFactory()
 			default:
 				guiFactory = nil
