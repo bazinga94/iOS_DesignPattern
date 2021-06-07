@@ -23,7 +23,7 @@ class SampleCollectionViewCellControllerFactory: CollectionViewCellControllerFac
 	}
 
 	func cellController(with item: ItemModelProtocol) -> [CollectionViewCellController] {	// section이 있는 경우 [[]] return
-		return []
+		return [SampleCollectionViewCellController(item: item)]
 	}
 }
 
