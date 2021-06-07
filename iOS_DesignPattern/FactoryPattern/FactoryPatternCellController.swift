@@ -48,3 +48,5 @@ class SampleCollectionViewCellController: CollectionViewCellController {
 	func didSelectCell(itemAt indexPath: IndexPath) {
 	}
 }
+
+// 새로운 cell을 추가하려고 할 때 view controller의 수정이 필요 없다.
