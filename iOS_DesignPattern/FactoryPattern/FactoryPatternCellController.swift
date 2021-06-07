@@ -7,21 +7,22 @@
 
 import UIKit
 
-protocol CellectionViewSectionController {
-
-}
-
 protocol CollectionViewCellController {
 	static func registerCell(on collectionView: UICollectionView)
 	func cellFromCollectionView(_ collectionView: UICollectionView, itemAt indexPath: IndexPath) -> UICollectionViewCell
 	func didSelectCell(itemAt indexPath: IndexPath)
 }
 
-class CollectionViewCellControllerFactory {
+protocol CollectionViewCellControllerFactory {
+	func registerCells(on collectionView: UICollectionView)
+}
+
+class SampleCollectionViewCellControllerFactory: CollectionViewCellControllerFactory {
 	func registerCells(on collectionView: UICollectionView) {
+		SampleCollectionViewCellController.registerCell(on: collectionView)
 	}
 
-	func cellController(with item: ItemModelProtocol) -> [CollectionViewCellController] {
+	func cellController(with item: ItemModelProtocol) -> [CollectionViewCellController] {	// section이 있는 경우 [[]] return
 		return []
 	}
 }
@@ -29,7 +30,7 @@ class CollectionViewCellControllerFactory {
 protocol ItemModelProtocol {
 }
 
-class YGTransferMemoCollectionViewCellController: CollectionViewCellController {
+class SampleCollectionViewCellController: CollectionViewCellController {
 
 	private let item: ItemModelProtocol
 
