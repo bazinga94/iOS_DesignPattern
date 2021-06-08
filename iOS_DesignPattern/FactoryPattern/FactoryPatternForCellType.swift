@@ -94,7 +94,7 @@ protocol Item {
 }
 
 class SampleTableCellController: CellController<UITableView> {
-	let item: Item
+	private let item: Item
 
 	init(item: Item) {
 		self.item = item
@@ -137,3 +137,40 @@ class SampleTableCellControllerFactory {
 //protocol ReusableCell: class {
 //	associatedtype CellHolder: ReusableCellHolder
 //}
+
+// 더욱 더 Generic 한 Cell Controller 생성
+
+class GenericCellController<T: ReusableCell>: CellController<T.CellHolder> {
+
+	typealias BaseReusableCell = T.CellHolder.CellType
+
+	final override class var cellClass: AnyClass {
+		return T.self
+	}
+
+	final override func configureCell(_ cell: BaseReusableCell) {
+		let cell = cell as! T
+		configureCell(cell)
+	}
+
+	func configureCell(_ cell: T) {
+
+	}
+}
+
+class SampleTableViewCell: UITableViewCell {
+}
+
+class SampleTableGenericCellController: GenericCellController<SampleTableViewCell> {
+	private let item: Item
+
+	init(item: Item) {
+		self.item = item
+	}
+
+	override func configureCell(_ cell: SampleTableViewCell) {
+	}
+
+	override func didSelectCell(itemAt indexPath: IndexPath) {
+	}
+}
