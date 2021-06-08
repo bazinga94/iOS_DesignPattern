@@ -1,5 +1,5 @@
 //
-//  FactoryMethodPattern.swift
+//  FactoryMethodPatternSample.swift
 //  iOS_DesignPattern
 //
 //  Created by Jongho Lee on 2021/05/27.
