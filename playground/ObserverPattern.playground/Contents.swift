@@ -76,14 +76,14 @@ class Task1: Observer {
 		for i in (1...10) {
 			print("\(String(describing: self)) progressing \(10 * i)/100")
 			sleep(1)
-			if isTaskFailed {
-				print("\(String(describing: self)) fail end")
-				return
-			}
-//			if i == 2 {
-//				delegate?.oneTaskFailed()
+//			if isTaskFailed {
+//				print("\(String(describing: self)) fail end")
 //				return
-//			}	// Task 실패 케이스
+//			}	// 이건 loop를 도는 경우에만 해당되는 solution... 다른 방법은 없나?
+			if i == 1 {
+				delegate?.oneTaskFailed()
+				return
+			}	// Task 실패 케이스
 		}
 		print("\(String(describing: self)) success end")
 		delegate?.oneTaskCompleted(by: self)
@@ -103,10 +103,10 @@ class Task2: Observer {
 		for i in (1...5) {
 			print("\(String(describing: self)) progressing \(20 * i)/100")
 			sleep(1)
-			if isTaskFailed {
-				print("\(String(describing: self)) fail end")
-				return
-			}
+//			if isTaskFailed {
+//				print("\(String(describing: self)) fail end")
+//				return
+//			}
 		}
 		print("\(String(describing: self)) success end")
 		delegate?.oneTaskCompleted(by: self)
@@ -126,10 +126,10 @@ class Task3: Observer {
 		for i in (1...4) {
 			print("\(String(describing: self)) progressing \(25 * i)/100")
 			sleep(1)
-			if isTaskFailed {
-				print("\(String(describing: self)) fail end")
-				return
-			}
+//			if isTaskFailed {
+//				print("\(String(describing: self)) fail end")
+//				return
+//			}
 		}
 		print("\(String(describing: self)) success end")
 		delegate?.oneTaskCompleted(by: self)
