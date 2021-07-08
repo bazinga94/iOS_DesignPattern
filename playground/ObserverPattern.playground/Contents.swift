@@ -33,15 +33,30 @@ protocol TaskManagerDelegate: class {
 }
 
 class SomeTaskManager: ObserverManager, TaskManagerDelegate {
+
+	var workItems: [DispatchWorkItem]?
+
 	/// 전체 task process 시작
 	func allTaskStart() {
 		print("All task start!")
 
 		for observer in observers {
-			DispatchQueue.global(qos: .utility).async {		// 비동기적으로 수행
+
+			var item: DispatchWorkItem?
+
+			item = DispatchWorkItem { [weak self] in
 				observer.delegate = self
 				observer.taskStart()
+//				item = nil
 			}
+			workItems?.append(item!)
+
+			DispatchQueue.global().async(execute: item!)
+
+//			DispatchQueue.global().async {		// 비동기적으로 수행
+//				observer.delegate = self
+//				observer.taskStart()
+//			}
 		}
 	}
 
@@ -63,6 +78,12 @@ class SomeTaskManager: ObserverManager, TaskManagerDelegate {
 		observers.forEach {
 			$0.notifyFail()
 		}
+		DispatchQueue.global().async {
+			self.workItems?.forEach {
+				$0.cancel()
+			}
+		}
+
 		print("Task failed! :(")
 	}
 }
