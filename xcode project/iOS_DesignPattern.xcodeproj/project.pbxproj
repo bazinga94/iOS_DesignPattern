@@ -188,12 +188,20 @@
 		B2EBA20626CCF5A400A40782 /* CellFactory */ = {
 			isa = PBXGroup;
 			children = (
+				B2EBA21726CCFB2400A40782 /* Sample */,
 				4387B35B2667BBBC00438B73 /* FactoryPatternCollectionCellController.swift */,
 				B24B932E266EF0BE0037D750 /* FactoryPatternForCellType.swift */,
+			);
+			path = CellFactory;
+			sourceTree = "<group>";
+		};
+		B2EBA21726CCFB2400A40782 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
 				B2EBA21026CCF92F00A40782 /* CellFactoryViewController.swift */,
 				B2EBA21126CCF92F00A40782 /* CellFactoryViewController.xib */,
 			);
-			path = CellFactory;
+			path = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
