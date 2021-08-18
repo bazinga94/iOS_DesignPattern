@@ -139,6 +139,14 @@ class 식빵: 빵 {
 	}
 }
 
+class 밤빵: 빵 {
+	func 반죽() {
+	}
+
+	func 오븐에굽기() {
+	}
+}
+
 enum 빵타입 {
 	case 식빵
 	case 단팥빵
@@ -162,7 +170,7 @@ class 빵Factory {
 			case .식빵:
 				return 식빵()
 			case .밤빵:
-				<#code#>
+				return 밤빵()
 		}
 	}
 }
