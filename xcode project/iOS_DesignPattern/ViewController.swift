@@ -58,5 +58,10 @@ class ViewController: UIViewController {
 		button.setTitle("button title")
 		button.show()
 	}
+
+	@IBAction func goCellFactory(_ sender: Any) {
+		let viewController = CellFactoryViewController()
+		self.navigationController?.pushViewController(viewController, animated: true)
+	}
 }
 

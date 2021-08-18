@@ -37,14 +37,23 @@
                                     <action selector="executeFactoryPatternExample:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kK-YX-u6L"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiA-1a-QGe">
+                                <rect key="frame" x="166" y="358" width="82" height="30"/>
+                                <state key="normal" title="Cell Factory"/>
+                                <connections>
+                                    <action selector="goCellFactory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cg4-UM-rPQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PwU-wF-37J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="6pG-x7-Dqb"/>
+                            <constraint firstItem="BiA-1a-QGe" firstAttribute="top" secondItem="Ey5-cw-I5K" secondAttribute="bottom" constant="50" id="EKd-Cl-9ll"/>
                             <constraint firstItem="Ey5-cw-I5K" firstAttribute="top" secondItem="Nax-hv-07L" secondAttribute="bottom" constant="50" id="Osc-gD-cCg"/>
                             <constraint firstItem="PwU-wF-37J" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dxe-jr-1G3"/>
                             <constraint firstItem="Ey5-cw-I5K" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fan-FO-MNd"/>
+                            <constraint firstItem="BiA-1a-QGe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gNw-x0-Xq9"/>
                             <constraint firstItem="Nax-hv-07L" firstAttribute="top" secondItem="PwU-wF-37J" secondAttribute="bottom" constant="50" id="i3C-ni-Eib"/>
                             <constraint firstItem="Nax-hv-07L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qFq-3t-Xfj"/>
                         </constraints>

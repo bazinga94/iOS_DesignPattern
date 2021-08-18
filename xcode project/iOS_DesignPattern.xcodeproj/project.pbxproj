@@ -25,6 +25,8 @@
 		B29C6A39265B6C7800BF666D /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C6A38265B6C7800BF666D /* SampleViewModel.swift */; };
 		B29C6A3E265B6C8800BF666D /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C6A3D265B6C8800BF666D /* SampleModel.swift */; };
 		B29C6A4C265B8E0000BF666D /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C6A4B265B8E0000BF666D /* Dynamic.swift */; };
+		B2EBA21226CCF92F00A40782 /* CellFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBA21026CCF92F00A40782 /* CellFactoryViewController.swift */; };
+		B2EBA21326CCF92F00A40782 /* CellFactoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EBA21126CCF92F00A40782 /* CellFactoryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		B29C6A38265B6C7800BF666D /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
 		B29C6A3D265B6C8800BF666D /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		B29C6A4B265B8E0000BF666D /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		B2EBA21026CCF92F00A40782 /* CellFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFactoryViewController.swift; sourceTree = "<group>"; };
+		B2EBA21126CCF92F00A40782 /* CellFactoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellFactoryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 			children = (
 				4387B35B2667BBBC00438B73 /* FactoryPatternCollectionCellController.swift */,
 				B24B932E266EF0BE0037D750 /* FactoryPatternForCellType.swift */,
+				B2EBA21026CCF92F00A40782 /* CellFactoryViewController.swift */,
+				B2EBA21126CCF92F00A40782 /* CellFactoryViewController.xib */,
 			);
 			path = CellFactory;
 			sourceTree = "<group>";
@@ -294,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B278C0462657622200F79CFD /* LaunchScreen.storyboard in Resources */,
+				B2EBA21326CCF92F00A40782 /* CellFactoryViewController.xib in Resources */,
 				B278C0432657622200F79CFD /* Assets.xcassets in Resources */,
 				B278C0412657622100F79CFD /* Main.storyboard in Resources */,
 			);
@@ -333,6 +340,7 @@
 				B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */,
 				B278C03C2657622100F79CFD /* SceneDelegate.swift in Sources */,
 				B29C6A3E265B6C8800BF666D /* SampleModel.swift in Sources */,
+				B2EBA21226CCF92F00A40782 /* CellFactoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
