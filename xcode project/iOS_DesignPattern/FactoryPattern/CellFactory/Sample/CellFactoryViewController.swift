@@ -15,6 +15,8 @@ class CellFactoryViewController: UIViewController {
 		super.viewDidLoad()
 		tableView.delegate = self
 		tableView.dataSource = self
+		tableView.register(UINib(nibName: "FirstSampleTableViewCell", bundle: nil), forCellWithReuseIdentifier: "FirstSampleTableViewCell")
+		tableView.register(UINib(nibName: "SecondSampleTableViewCell", bundle: nil), forCellWithReuseIdentifier: "SecondSampleTableViewCell")
 	}
 }
 
@@ -28,6 +30,6 @@ extension CellFactoryViewController: UITableViewDataSource {
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		return 
+		return
 	}
 }

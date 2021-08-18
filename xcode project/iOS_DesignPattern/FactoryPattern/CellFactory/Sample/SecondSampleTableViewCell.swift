@@ -9,6 +9,8 @@ import UIKit
 
 class SecondSampleTableViewCell: UITableViewCell {
 
+	@IBOutlet weak var secondLabel: UILabel!
+
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		// Initialization code
