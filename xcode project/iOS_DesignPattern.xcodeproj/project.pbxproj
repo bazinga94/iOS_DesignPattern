@@ -27,6 +27,10 @@
 		B29C6A4C265B8E0000BF666D /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C6A4B265B8E0000BF666D /* Dynamic.swift */; };
 		B2EBA21226CCF92F00A40782 /* CellFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBA21026CCF92F00A40782 /* CellFactoryViewController.swift */; };
 		B2EBA21326CCF92F00A40782 /* CellFactoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EBA21126CCF92F00A40782 /* CellFactoryViewController.xib */; };
+		B2EBA22026CDD3D400A40782 /* FirstSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBA21E26CDD3D400A40782 /* FirstSampleTableViewCell.swift */; };
+		B2EBA22126CDD3D400A40782 /* FirstSampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EBA21F26CDD3D400A40782 /* FirstSampleTableViewCell.xib */; };
+		B2EBA22F26CDD42F00A40782 /* SecondSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBA22D26CDD42F00A40782 /* SecondSampleTableViewCell.swift */; };
+		B2EBA23026CDD42F00A40782 /* SecondSampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EBA22E26CDD42F00A40782 /* SecondSampleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		B29C6A4B265B8E0000BF666D /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		B2EBA21026CCF92F00A40782 /* CellFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFactoryViewController.swift; sourceTree = "<group>"; };
 		B2EBA21126CCF92F00A40782 /* CellFactoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellFactoryViewController.xib; sourceTree = "<group>"; };
+		B2EBA21E26CDD3D400A40782 /* FirstSampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSampleTableViewCell.swift; sourceTree = "<group>"; };
+		B2EBA21F26CDD3D400A40782 /* FirstSampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstSampleTableViewCell.xib; sourceTree = "<group>"; };
+		B2EBA22D26CDD42F00A40782 /* SecondSampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSampleTableViewCell.swift; sourceTree = "<group>"; };
+		B2EBA22E26CDD42F00A40782 /* SecondSampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondSampleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +208,10 @@
 			children = (
 				B2EBA21026CCF92F00A40782 /* CellFactoryViewController.swift */,
 				B2EBA21126CCF92F00A40782 /* CellFactoryViewController.xib */,
+				B2EBA21E26CDD3D400A40782 /* FirstSampleTableViewCell.swift */,
+				B2EBA21F26CDD3D400A40782 /* FirstSampleTableViewCell.xib */,
+				B2EBA22D26CDD42F00A40782 /* SecondSampleTableViewCell.swift */,
+				B2EBA22E26CDD42F00A40782 /* SecondSampleTableViewCell.xib */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -308,7 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B278C0462657622200F79CFD /* LaunchScreen.storyboard in Resources */,
+				B2EBA23026CDD42F00A40782 /* SecondSampleTableViewCell.xib in Resources */,
 				B2EBA21326CCF92F00A40782 /* CellFactoryViewController.xib in Resources */,
+				B2EBA22126CDD3D400A40782 /* FirstSampleTableViewCell.xib in Resources */,
 				B278C0432657622200F79CFD /* Assets.xcassets in Resources */,
 				B278C0412657622100F79CFD /* Main.storyboard in Resources */,
 			);
@@ -341,10 +355,12 @@
 				B29C6A34265B6C4B00BF666D /* SampleViewController.swift in Sources */,
 				B29C6A4C265B8E0000BF666D /* Dynamic.swift in Sources */,
 				B29C6A39265B6C7800BF666D /* SampleViewModel.swift in Sources */,
+				B2EBA22026CDD3D400A40782 /* FirstSampleTableViewCell.swift in Sources */,
 				B278C03A2657622100F79CFD /* AppDelegate.swift in Sources */,
 				4387B35C2667BBBC00438B73 /* FactoryPatternCollectionCellController.swift in Sources */,
 				43A21424265FDDDB001160AB /* FactoryMethodPatternSample.swift in Sources */,
 				B24B932F266EF0BE0037D750 /* FactoryPatternForCellType.swift in Sources */,
+				B2EBA22F26CDD42F00A40782 /* SecondSampleTableViewCell.swift in Sources */,
 				B278C06E2657653700F79CFD /* ObserverPattern.swift in Sources */,
 				B278C03C2657622100F79CFD /* SceneDelegate.swift in Sources */,
 				B29C6A3E265B6C8800BF666D /* SampleModel.swift in Sources */,
