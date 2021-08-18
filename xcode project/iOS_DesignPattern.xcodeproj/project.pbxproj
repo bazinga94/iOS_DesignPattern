@@ -99,10 +99,9 @@
 		43A21422265FD8E3001160AB /* FactoryPattern */ = {
 			isa = PBXGroup;
 			children = (
+				B2EBA20626CCF5A400A40782 /* CellFactory */,
 				43A21423265FDDDB001160AB /* FactoryMethodPatternSample.swift */,
 				43A21428265FDFFD001160AB /* AbstractFactoryPatternSample.swift */,
-				4387B35B2667BBBC00438B73 /* FactoryPatternCollectionCellController.swift */,
-				B24B932E266EF0BE0037D750 /* FactoryPatternForCellType.swift */,
 			);
 			path = FactoryPattern;
 			sourceTree = "<group>";
@@ -180,6 +179,15 @@
 				B29C6A4B265B8E0000BF666D /* Dynamic.swift */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		B2EBA20626CCF5A400A40782 /* CellFactory */ = {
+			isa = PBXGroup;
+			children = (
+				4387B35B2667BBBC00438B73 /* FactoryPatternCollectionCellController.swift */,
+				B24B932E266EF0BE0037D750 /* FactoryPatternForCellType.swift */,
+			);
+			path = CellFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
