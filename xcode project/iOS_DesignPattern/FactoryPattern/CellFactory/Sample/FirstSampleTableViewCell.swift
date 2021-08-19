@@ -21,3 +21,23 @@ class FirstSampleTableViewCell: UITableViewCell {
 		// Configure the view for the selected state
 	}
 }
+
+struct FirstCellItem {
+	var firstLabel: String
+}
+
+class FirstSampleTableViewCellController: GenericCellController<FirstSampleTableViewCell> {
+	private let item: FirstCellItem
+
+	init(item: FirstCellItem) {
+		self.item = item
+	}
+
+	override func configureCell(_ cell: FirstSampleTableViewCell) {
+		cell.firstLabel.text = item.firstLabel
+	}
+
+	override func didSelectCell(itemAt indexPath: IndexPath) {
+		print("\(item.firstLabel) did selected!")
+	}
+}

@@ -21,3 +21,23 @@ class SecondSampleTableViewCell: UITableViewCell {
 		// Configure the view for the selected state
 	}
 }
+
+struct SecondCellItem {
+	var secondLabel: String
+}
+
+class SecondSampleTableViewCellController: GenericCellController<SecondSampleTableViewCell> {
+	private let item: SecondCellItem
+
+	init(item: SecondCellItem) {
+		self.item = item
+	}
+
+	override func configureCell(_ cell: SecondSampleTableViewCell) {
+		cell.secondLabel.text = item.secondLabel
+	}
+
+	override func didSelectCell(itemAt indexPath: IndexPath) {
+		print("\(item.secondLabel) did selected!")
+	}
+}
